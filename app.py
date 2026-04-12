@@ -4,17 +4,13 @@ import logging
 import requests
 from typing import Dict, List
 
-# =================================================================
-# 0. LOGGING E CONFIGURAÇÃO
-# =================================================================
+
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
 st.set_page_config(page_title="Digital Labor Observatory", layout="wide")
 
-# =================================================================
-# 1. DESIGN (INTERFACE CRÍTICA)
-# =================================================================
+
 def apply_custom_design():
     st.markdown("""
     <style>
@@ -35,9 +31,7 @@ def apply_custom_design():
 
 apply_custom_design()
 
-# =================================================================
-# 2. MOTOR DE INGESTÃO (API DO GITHUB - CONECTOR DINÂMICO)
-# =================================================================
+
 @st.cache_data(ttl=3600) # Mantém os dados frescos por 1 hora
 def fetch_live_data(query: str = "language:python", sort: str = "stars") -> pd.DataFrame:
     """Extrai dados em tempo real, quebrando a estaticidade da infraestrutura."""
@@ -64,9 +58,7 @@ def fetch_live_data(query: str = "language:python", sort: str = "stars") -> pd.D
         logger.error(f"Falha na conexão: {e}")
         return pd.DataFrame()
 
-# =================================================================
-# 3. CAMADA ANALÍTICA (ACD)
-# =================================================================
+
 def enrich_and_analyze(df: pd.DataFrame) -> pd.DataFrame:
     """Aplica métricas de apropriação e capital simbólico."""
     if df.empty: return df
@@ -76,9 +68,7 @@ def enrich_and_analyze(df: pd.DataFrame) -> pd.DataFrame:
     df['appropriation_rate'] = df['forks'] / df['stars']
     return df
 
-# =================================================================
-# 4. SIDEBAR E CONTROLE DE FLUXO
-# =================================================================
+
 with st.sidebar:
     st.header("⚙️ Agente de Busca")
     tech_query = st.text_input("Termo de Busca (ex: AI, Agent, LLM)", "language:python")
@@ -90,9 +80,7 @@ with st.sidebar:
     
     st.caption("Conexão ativa com a infraestrutura do GitHub via API v3.")
 
-# =================================================================
-# 5. EXECUÇÃO E INTERFACE
-# =================================================================
+
 st.title("📊 Observatório do Trabalho Digital")
 st.caption("Análise em tempo real de infraestruturas de código e hegemonias algorítmicas.")
 
@@ -141,7 +129,7 @@ if not df.empty:
 else:
     st.warning("Aguardando entrada do Agente de Busca...")
 
-# Reflexividade (Conforme o seu interesse em ACD)
+
 st.divider()
 st.markdown("### 🧩 Reflexividade do Observatório")
 st.caption("Este sistema não é neutro. Ele mapeia a economia política do software aberto, onde estrelas são capital simbólico e forks são vetores de trabalho digital.")
