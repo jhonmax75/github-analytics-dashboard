@@ -104,9 +104,11 @@ github-analytics-dashboard/
 
  👨‍💻 Author
 
-Jhon Max Polins Ribeiro
-Researcher & Data EnthusiastTécnico | Pesquisador em Gestão de Recursos Humanos,
-Independent Researcher — AI, Data Capitalism & Sci
+**Jhon Max Polins Ribeiro**
+Researcher & Data Enthusiast
+Technician in Human Resources Management and independent researcher, with an interest in the intersections between Artificial Intelligence, data capitalism, and contemporary science.
+
+He works independently in the development of analytical projects, focusing on data visualization, API exploration, and the construction of interactive dashboards. His work seeks to articulate technical fundamentals with critical reflection on technology and society.
 
 
  🌐 Project Status
