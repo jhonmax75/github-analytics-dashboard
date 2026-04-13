@@ -104,7 +104,7 @@ github-analytics-dashboard/
 
  👨‍💻 Author
 
-**Jhon Max Polins Ribeiro**
+**Jhon M. P. Ribeiro**
 Researcher & Data Enthusiast
 Technician in Human Resources Management and independent researcher, with an interest in the intersections between Artificial Intelligence, data capitalism, and contemporary science.
 
