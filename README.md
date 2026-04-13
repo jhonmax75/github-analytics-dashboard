@@ -1,4 +1,4 @@
- 📊 GitHub Analytics Dashboard
+ **📊 GitHub Analytics Dashboard**
 
 Interactive data analytics dashboard built with **Python**, **Streamlit**, and **Plotly** to explore and visualize GitHub repository data.
 
