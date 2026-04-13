@@ -1,61 +1,49 @@
- **📊 GitHub Analytics Dashboard**
+**📊 Painel de Análise do GitHub**
 
-Interactive data analytics dashboard built with **Python**, **Streamlit**, and **Plotly** to explore and visualize GitHub repository data.
+Painel de análise de dados interativo, desenvolvido com **Python**, **Streamlit** e **Plotly**, para explorar e visualizar dados de repositórios do GitHub.
 
+🚀 Visão Geral
 
+Este projeto oferece uma interface interativa para analisar dados do GitHub, permitindo que os usuários explorem tendências, classificações e atividades dos repositórios por meio de visualizações dinâmicas.
 
- 🚀 Overview
+ Projetado como um projeto prático de dados, ele combina:
 
-This project provides an interactive interface for analyzing GitHub data, enabling users to explore repository trends, rankings, and activity through dynamic visualizations.
+* 📊 Visualização de dados
+* ⚡ Painéis interativos
+* 🧠 Exploração analítica
+* 🏗️ Arquitetura modular em Python
 
-Designed as a hands-on data project, it combines:
+📸 Pré-visualização do painel
 
-* 📊 Data visualization
-* ⚡ Interactive dashboards
-* 🧠 Analytical exploration
-* 🏗️ Modular Python architecture
-
-
-
- 📸 Dashboard Preview
-
- 🔹 Main Dashboard
+🔹 Painel principal
 
 ![Dashboard](assets/dashboard/overview.png)
 
-
- 🔹 Data Analysis
+🔹 Análise de dados
 
 ![Analysis](assets/analysis/analysis.png)
 
-
-
- 🔹 Methodology
+🔹 Metodologia
 
 ![Methodology](assets/methodology/methodology.png)
 
-
-
- 🔹 App Navigation
+🔹 Navegação do aplicativo
 
 ![Navigation](assets/app/navigation.png)
 
+⚙️ Executando o aplicativo
 
-
- ⚙️ Running the Application
-
-Run the Streamlit app locally:
+Execute o aplicativo Streamlit localmente:
 
 ```bash
 streamlit run app.py
 ```
 
- 🔹 Execution Preview
+🔹 Execução  Pré-visualização
 
-![Run Command](assets/app/run-command.png)
+![Executar Comando](assets/app/run-command.png)
 
-
- 🧩 Project Structure
+🧩 Estrutura do Projeto
 
 ```
 github-analytics-dashboard/
@@ -67,57 +55,48 @@ github-analytics-dashboard/
 └── README.md
 ```
 
-
-
-⚙️ Technologies Used
+⚙️ Tecnologias Utilizadas
 
 * Python
 * Streamlit
 * Plotly
-* Git & GitHub
+* Git e GitHub
 
+🎯 Recursos
 
- 🎯 Features
+* 📈 Visualizações de dados interativas
+* ⚡ Exploração em tempo real
+* 🧭 Navegação entre páginas
+* 🗂️ Estrutura modular e escalável
 
-* 📈 Interactive data visualizations
-* ⚡ Real-time exploration
-* 🧭 Multi-page navigation
-* 🗂️ Modular and scalable structure
+📊 Casos de Uso
 
+* Análise de repositórios do GitHub
+* Aprendizado de visualização de dados
+* Prototipagem de dashboards
+*  Projeto de portfólio para funções de dados
 
- 📊 Use Cases
+📈 Melhorias Futuras
 
-* GitHub repository analysis
-* Data visualization learning
-* Dashboard prototyping
-* Portfolio project for data roles
+* 🔗 Integração com a API do GitHub (dados em tempo real)
+* ☁️ Implantação (Streamlit Cloud / Render)
+* 🔄 Pipelines ETL automatizados
+* 📊 Análises avançadas
 
-
-
- 📈 Future Improvements
-
-* 🔗 Integration with GitHub API (live data)
-* ☁️ Deployment (Streamlit Cloud / Render)
-* 🔄 Automated ETL pipelines
-* 📊 Advanced analytics
-
-
- 👨‍💻 Author
+👨‍💻 Autor
 
 **Jhon M. P. Ribeiro**
-Researcher & Data Enthusiast
-Technician in Human Resources Management and independent researcher, with an interest in the intersections between Artificial Intelligence, data capitalism, and contemporary science.
+Pesquisador e Entusiasta de Dados
+Técnico em Gestão de Recursos Humanos e pesquisador independente, com interesse nas interseções entre Inteligência Artificial, capitalismo de dados e ciência contemporânea.
 
-He works independently in the development of analytical projects, focusing on data visualization, API exploration, and the construction of interactive dashboards. His work seeks to articulate technical fundamentals with critical reflection on technology and society.
+Trabalha de forma independente no desenvolvimento de projetos analíticos, com foco em visualização de dados, exploração de APIs e construção de dashboards interativos. Seu trabalho busca articular fundamentos técnicos com reflexão crítica sobre tecnologia e sociedade.
 
+🌐 Status do Projeto
 
- 🌐 Project Status
+🟢 Ativo — em constante evolução
 
-🟢 Active — continuously evolving
+⭐ Contribuição e Feedback
 
+Sinta-se à vontade para criar um fork deste repositório, abrir issues ou enviar pull requests.
 
- ⭐ Contribution & Feedback
-
-Feel free to fork this repository, open issues, or submit pull requests.
-
-If you found this project useful, consider giving it a ⭐!
+ Se você achou este projeto útil, considere dar uma ⭐!
