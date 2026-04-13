@@ -28,7 +28,7 @@ Designed as a hands-on data project, it combines:
 
 ![Analysis](assets/analysis/analysis.png)
 
----
+
 
  🔹 Methodology
 
@@ -92,7 +92,7 @@ github-analytics-dashboard/
 * Dashboard prototyping
 * Portfolio project for data roles
 
----
+
 
  📈 Future Improvements
 
@@ -105,7 +105,8 @@ github-analytics-dashboard/
  👨‍💻 Author
 
 Jhon Max Polins Ribeiro
-Researcher & Data Enthusiast
+Researcher & Data EnthusiastTécnico | Pesquisador em Gestão de Recursos Humanos,
+Independent Researcher — AI, Data Capitalism & Sci
 
 
  🌐 Project Status
