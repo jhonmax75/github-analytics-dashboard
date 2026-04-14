@@ -1,4 +1,4 @@
+.streamlit/
 __pycache__/
 *.pyc
-.env__pycache__/
-*.pyc
+.env

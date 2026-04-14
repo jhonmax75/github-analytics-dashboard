@@ -3,14 +3,9 @@ import pandas as pd
 import logging
 import requests
 from typing import Dict, List
-
-
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
-
 st.set_page_config(page_title="Digital Labor Observatory", layout="wide")
-
-
 def apply_custom_design():
     st.markdown("""
     <style>
@@ -28,10 +23,7 @@ def apply_custom_design():
         }
     </style>
     """, unsafe_allow_html=True)
-
 apply_custom_design()
-
-
 @st.cache_data(ttl=3600) # Mantém os dados frescos por 1 hora
 def fetch_live_data(query: str = "language:python", sort: str = "stars") -> pd.DataFrame:
     """Extrai dados em tempo real, quebrando a estaticidade da infraestrutura."""
@@ -57,8 +49,6 @@ def fetch_live_data(query: str = "language:python", sort: str = "stars") -> pd.D
     except Exception as e:
         logger.error(f"Falha na conexão: {e}")
         return pd.DataFrame()
-
-
 def enrich_and_analyze(df: pd.DataFrame) -> pd.DataFrame:
     """Aplica métricas de apropriação e capital simbólico."""
     if df.empty: return df
@@ -67,8 +57,6 @@ def enrich_and_analyze(df: pd.DataFrame) -> pd.DataFrame:
     # Taxa de Apropriação: Forks (Trabalho) / Stars (Capital Simbólico)
     df['appropriation_rate'] = df['forks'] / df['stars']
     return df
-
-
 with st.sidebar:
     st.header("⚙️ Agente de Busca")
     tech_query = st.text_input("Termo de Busca (ex: AI, Agent, LLM)", "language:python")
@@ -79,23 +67,17 @@ with st.sidebar:
     mode = st.selectbox("Modo de Interpretação", ["Capital Digital", "Trabalho Colaborativo"])
     
     st.caption("Conexão ativa com a infraestrutura do GitHub via API v3.")
-
-
 st.title("📊 Observatório do Trabalho Digital")
 st.caption("Análise em tempo real de infraestruturas de código e hegemonias algorítmicas.")
-
 # Aciona a Ingestão (Baseado na imagem: Ingestion -> Vector DB)
 raw_df = fetch_live_data(query=tech_query, sort=sort_mode)
 df = enrich_and_analyze(raw_df)
-
 if not df.empty:
     labels = {
         "Capital Digital": {"m": "Taxa de Apropriação", "s": "Capital Simbólico", "f": "Trabalho Acumulado"},
         "Trabalho Colaborativo": {"m": "Intensidade de Uso", "s": "Visibilidade", "f": "Contribuições"}
     }.get(mode)
-
     col1, col2 = st.columns([2, 1])
-
     with col1:
         top_repo = df.iloc[0]
         st.markdown(f"""
@@ -105,12 +87,10 @@ if not df.empty:
             <p style="color:var(--text-dim);">{top_repo['description']}</p>
         </div>
         """, unsafe_allow_html=True)
-
     with col2:
         st.metric(labels["m"], f"{df['appropriation_rate'].mean():.2%}", delta="Live Data")
         with st.container(border=True):
             st.caption("**Nota do Agente:** Projetos com alta taxa de forks em relação a estrelas indicam infraestruturas que exigem mais trabalho derivado.")
-
     st.divider()
     st.subheader("🛠️ Auditoria das Unidades de Produção")
     
@@ -128,8 +108,6 @@ if not df.empty:
     )
 else:
     st.warning("Aguardando entrada do Agente de Busca...")
-
-
 st.divider()
 st.markdown("### 🧩 Reflexividade do Observatório")
 st.caption("Este sistema não é neutro. Ele mapeia a economia política do software aberto, onde estrelas são capital simbólico e forks são vetores de trabalho digital.")
