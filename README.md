@@ -87,7 +87,7 @@ github-analytics-dashboard/
 
 **Jhon M. P. Ribeiro**
 Pesquisador e Entusiasta de Dados
-Técnico em Gestão de Recursos Humanos e pesquisador independente, com interesse nas interseções entre Inteligência Artificial, capitalismo de dados e ciência contemporânea.
+Técnico em Gestão de Recursos Humanos | pesquisador independente, com interesse nas interseções entre Inteligência Artificial, capitalismo de dados e ciência contemporânea.
 
 Trabalha de forma independente no desenvolvimento de projetos analíticos, com foco em visualização de dados, exploração de APIs e construção de dashboards interativos. Seu trabalho busca articular fundamentos técnicos com reflexão crítica sobre tecnologia e sociedade.
 
